@@ -3,4 +3,4 @@
 "Show off your tech stack in style with tech-orbit!"
 
 
-![Demo](https://tech-orbit.vercel.app/api?tech=next.js,react,nestjs,javascript,typescript&size=1000)
+![Demo](https://tech-orbit.wontory.dev/api?tech=next.js,react,nestjs,javascript,typescript&size=1000)
