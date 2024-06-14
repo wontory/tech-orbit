@@ -2,7 +2,7 @@ function TechOrbit(size: number, index: number, duration: number) {
   const orbitOrder = Math.floor(index / 2)
   const orbitRadius = 80 + 110 * orbitOrder
   const itemRadius = 30 + 20 * orbitOrder
-  const initialAngle = index % 2 === 0 ? 0 : -180
+  const initialAngle = (index % 2) * -180
 
   return `
     <style>
