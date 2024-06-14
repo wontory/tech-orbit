@@ -1,4 +1,4 @@
-function Text(text: string) {
+function text(title: string) {
   return `
     <defs>
       <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -7,9 +7,9 @@ function Text(text: string) {
       </linearGradient>
     </defs>
     <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="url(#gradient)" font-size="5.5rem" font-weight="600">
-      ${text}
+      ${title}
     </text>
   `
 }
 
-export { Text }
+export { text }

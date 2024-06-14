@@ -6,14 +6,14 @@ export async function GET(req: NextRequest) {
   const { searchParams } = req.nextUrl
   const size = searchParams.get('size') || '1000'
   const duration = searchParams.get('duration') || '20'
-  const text = searchParams.get('text') || ''
+  const title = searchParams.get('title') || ''
   const tech = searchParams.get('tech') || ''
 
   const svg = TechOrbit(
     Number(size),
     Number(duration),
-    text,
     tech.toLowerCase().split(','),
+    title,
   )
 
   return new NextResponse(svg, {
