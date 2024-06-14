@@ -10,30 +10,30 @@ function items(size: number, data: string[], duration: number) {
     const icon = icons[item as IconsKeyType]
 
     return `
-        <style>
+      <style>
         .orbit${index} {
-            animation: orbit${index} calc(${duration} * 1s) linear infinite ${orbitOrder % 2 === 0 ? '' : 'reverse'};
+          animation: orbit${index} calc(${duration} * 1s) linear infinite ${orbitOrder % 2 === 0 ? '' : 'reverse'};
         }
 
         @keyframes orbit${index} {
-            from {
+          from {
             transform: rotate(${initialAngle}deg) translateX(calc(${orbitRadius} * 1px)) rotate(${initialAngle}deg);
-            }
-            to {
+          }
+          to {
             transform: rotate(${initialAngle + 360}deg) translateX(calc(${orbitRadius} * 1px)) rotate(${initialAngle - 360}deg);
-            }
+          }
         }
-        </style>
-        <foreignObject
+      </style>
+      <foreignObject
         x="${(size - itemRadius) / 2}"
         y="${(size - itemRadius) / 2}"
         width="${itemRadius}"
         height="${itemRadius}"
         fill="#${icon.hex}"
         class="orbit${index}"
-        >
+      >
         ${icon.svg}
-        </foreignObject>
+      </foreignObject>
     `
   })
 }
