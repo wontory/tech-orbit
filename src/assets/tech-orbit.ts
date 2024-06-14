@@ -1,4 +1,11 @@
-function TechOrbit(size: number, index: number, duration: number) {
+import type { SimpleIcon } from 'simple-icons'
+
+function TechOrbit(
+  icon: SimpleIcon,
+  size: number,
+  index: number,
+  duration: number,
+) {
   const orbitOrder = Math.floor(index / 2)
   const orbitRadius = 80 + 110 * orbitOrder
   const itemRadius = 30 + 20 * orbitOrder
@@ -28,13 +35,16 @@ function TechOrbit(size: number, index: number, duration: number) {
       stroke-opacity="0.1"
       stroke-dasharray="4 4"
     />
-    <circle
-      cx="${size / 2}"
-      cy="${size / 2}"
-      r="${itemRadius}"
-      fill="blue"
+    <foreignObject
+      x="${(size - itemRadius) / 2}"
+      y="${(size - itemRadius) / 2}"
+      width="${itemRadius}"
+      height="${itemRadius}"
+      fill="#${icon.hex}"
       class="orbit${index}"
-    />
+    >
+      ${icon.svg}
+    </foreignObject>
   `
 }
 

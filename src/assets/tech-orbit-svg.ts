@@ -1,4 +1,5 @@
 import { TechOrbit } from '@/assets/tech-orbit'
+import { Icons, type IconsKeyType } from '@/assets/icons'
 
 function TechOrbitSvg(
   size: number,
@@ -8,7 +9,7 @@ function TechOrbitSvg(
 ) {
   return `
     <svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}">
-      ${data.map((item, index) => TechOrbit(size, index, duration))}
+      ${data.map((item, index) => TechOrbit(Icons[item as IconsKeyType], size, index, duration))}
     </svg>
   `
 }
