@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 
-import { TechOrbitSvg } from '@/assets/tech-orbit-svg'
+import { TechOrbit } from '@/assets/tech-orbit'
 
 export async function GET(req: NextRequest) {
   const { searchParams } = req.nextUrl
@@ -9,7 +9,7 @@ export async function GET(req: NextRequest) {
   const text = searchParams.get('text') || ''
   const tech = searchParams.get('tech') || ''
 
-  const svg = TechOrbitSvg(
+  const svg = TechOrbit(
     Number(size),
     Number(duration),
     text,

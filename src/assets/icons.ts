@@ -7,7 +7,7 @@ import {
   siTypescript,
 } from 'simple-icons'
 
-const Icons = {
+const icons = {
   react: siReact,
   'next.js': siNextdotjs,
   nestjs: siNestjs,
@@ -16,6 +16,6 @@ const Icons = {
   'tailwind css': siTailwindcss,
 }
 
-type IconsKeyType = keyof typeof Icons
+type IconsKeyType = keyof typeof icons
 
-export { Icons, type IconsKeyType }
+export { icons, type IconsKeyType }
