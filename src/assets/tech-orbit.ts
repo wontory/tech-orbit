@@ -2,7 +2,7 @@ import { orbits } from '@/assets/orbits'
 import { items } from '@/assets/items'
 import { text } from '@/assets/text'
 
-function TechOrbit(
+function techOrbit(
   size: number,
   duration: number,
   data: string[],
@@ -24,4 +24,4 @@ function TechOrbit(
   `
 }
 
-export { TechOrbit }
+export { techOrbit }
