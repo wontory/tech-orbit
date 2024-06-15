@@ -8,4 +8,4 @@
 
 ## Repository README Demo
 
-![Profile Demo](https://tech-orbit.wontory.dev/api?tech=SVG,Simple%20Icons,Next.js,TypeScript,Vercel&size=500&title=tech-orbit)
+![Profile Demo](https://tech-orbit.wontory.dev/api?tech=SVG,Simple%20Icons,Next.js,TypeScript,Vercel&size=800&title=tech-orbit)
