@@ -10,7 +10,7 @@ function orbits(size: number, length: number) {
         r="${80 + 110 * index}"
         fill="none"
         stroke="black"
-        stroke-opacity="0.1"
+        stroke-opacity="0.2"
         stroke-dasharray="4 4"
       />
     `,
