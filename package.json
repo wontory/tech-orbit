@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "prepare": "bun script/generate-icons.mjs",
     "dev": "next dev",
     "prebuild": "bun script/generate-icons.mjs",
     "build": "next build",
