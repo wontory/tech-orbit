@@ -3,8 +3,10 @@ import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
 import '@/styles/globals.css'
 
+import { cn } from '@/libs/utils'
+
 export const metadata: Metadata = {
-  title: 'Tech Orbit',
+  title: 'tech-orbit',
   description: 'Show off your tech stack in style with tech-orbit!',
 }
 
@@ -15,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${GeistSans.variable} ${GeistMono.variable}`}>
+      <body className={cn(GeistSans.variable, GeistMono.variable)}>
         {children}
       </body>
     </html>
