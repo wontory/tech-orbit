@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn('p-8', GeistSans.variable, GeistMono.variable)}>
+      <body className={cn('p-16', GeistSans.variable, GeistMono.variable)}>
         {children}
       </body>
     </html>
