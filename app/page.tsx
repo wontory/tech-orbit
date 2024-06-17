@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import Image from 'next/image'
 import { useAtomValue } from 'jotai'
 
 import { IconSelectSection } from '@/components/icon-select-section'
@@ -22,14 +21,11 @@ export default function Home() {
           <code>{`![${title}](https://tech-orbit.wontory.dev/api?title=${title.replaceAll(' ', '%20')}&tech=${selectedIcons.join(',').replaceAll(' ', '%20')}&size=${size})`}</code>
         </pre>
         {selectedIcons.length !== 0 && (
-          <div className="relative aspect-square h-full w-full">
-            <Image
-              src={`/api?title=${title.replaceAll(' ', '%20')}&tech=${selectedIcons.join(',').replaceAll(' ', '%20')}&size=${size}`}
-              alt={`${title} with ${selectedIcons.join(', ')}`}
-              className="aspect-square"
-              fill
-            />
-          </div>
+          <img
+            src={`/api?title=${title.replaceAll(' ', '%20')}&tech=${selectedIcons.join(',').replaceAll(' ', '%20')}&size=${size}`}
+            alt={`${title} with ${selectedIcons.join(', ')}`}
+            className="aspect-square h-full w-full"
+          />
         )}
         <Slider
           defaultValue={size}
