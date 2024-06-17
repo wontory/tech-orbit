@@ -7,6 +7,7 @@ Object.keys(simpleIcons).forEach((key) => {
   const icon = simpleIcons[key]
 
   iconsObject[icon.title.toLowerCase()] = {
+    title: icon.title,
     svg: icon.svg,
     hex: icon.hex,
   }
