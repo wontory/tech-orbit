@@ -20,13 +20,11 @@ export default function Home() {
         <pre className="overflow-x-scroll">
           <code>{`![${title}](https://tech-orbit.wontory.dev/api?title=${title.replaceAll(' ', '%20')}&tech=${selectedIcons.join(',').replaceAll(' ', '%20')}&size=${size})`}</code>
         </pre>
-        {selectedIcons.length !== 0 && (
-          <img
-            src={`/api?title=${title.replaceAll(' ', '%20')}&tech=${selectedIcons.join(',').replaceAll(' ', '%20')}&size=${size}`}
-            alt={`${title} with ${selectedIcons.join(', ')}`}
-            className="aspect-square h-full w-full"
-          />
-        )}
+        <img
+          src={`/api?title=${title.replaceAll(' ', '%20')}&tech=${selectedIcons.join(',').replaceAll(' ', '%20')}&size=${size}`}
+          alt={`${title} with ${selectedIcons.join(', ')}`}
+          className="aspect-square h-full w-full"
+        />
         <Slider
           defaultValue={size}
           min={300}

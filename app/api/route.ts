@@ -12,7 +12,10 @@ export async function GET(req: NextRequest) {
   const svg = techOrbit(
     Number(size),
     Number(duration),
-    tech.toLowerCase().split(','),
+    tech
+      .toLowerCase()
+      .split(',')
+      .filter((item) => item !== ''),
     title,
   )
 
