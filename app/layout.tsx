@@ -4,6 +4,7 @@ import { GeistMono } from 'geist/font/mono'
 import '@/styles/globals.css'
 
 import { cn } from '@/libs/utils'
+import Providers from './providers'
 
 export const metadata: Metadata = {
   title: 'tech-orbit',
@@ -18,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn('p-16', GeistSans.variable, GeistMono.variable)}>
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   )
