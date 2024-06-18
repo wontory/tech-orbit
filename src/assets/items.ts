@@ -1,4 +1,5 @@
-import { icons, type IconsKeyType } from '@/assets/icons'
+import { icons } from '@/assets/icons'
+import type { IconsKeyType } from '@/types/icons'
 
 function items(size: number, data: string[], duration: number) {
   return data.map((item, index) => {

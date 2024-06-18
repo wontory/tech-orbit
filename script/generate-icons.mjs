@@ -17,7 +17,7 @@ const iconsJson = JSON.stringify(iconsObject)
 
 fs.writeFileSync(
   './src/assets/icons.ts',
-  `type IconsKeyType = keyof typeof icons; const icons = ${iconsJson}; export { type IconsKeyType, icons };`,
+  `const icons = ${iconsJson}; export { icons };`,
 )
 
 console.log('Icons data has been generated and saved to iconsData.json')
