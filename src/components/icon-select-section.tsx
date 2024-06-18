@@ -27,7 +27,7 @@ function IconSelectSection() {
       <h2 className="text-2xl font-bold">Icons</h2>
       <Input placeholder="Search Icons" onChange={handleSearch} />
       <ScrollArea className="flex max-h-[calc(100vh-368px)] flex-col">
-        <div className="grid grid-cols-2 gap-4 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
+        <div className="grid grid-cols-2 gap-4 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-6">
           {filteredIcons.map((icon, index) => (
             <IconButton key={`icon-${index}`} icon={icon[1]} />
           ))}

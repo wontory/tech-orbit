@@ -15,7 +15,7 @@ const IconButton = memo(({ icon }: { icon: IconType }) => {
   return (
     <Button
       variant="outline"
-      className="flex aspect-square h-full w-full flex-col gap-4"
+      className="flex aspect-square h-full w-full flex-col gap-4 text-wrap"
       onClick={handleClick}
     >
       <div
