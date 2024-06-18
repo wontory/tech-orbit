@@ -22,7 +22,7 @@
     "next": "14.2.4",
     "react": "^18",
     "react-dom": "^18",
-    "simple-icons": "^12.2.0",
+    "simple-icons": "^12.3.0",
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7"
   },
