@@ -1,12 +1,12 @@
 'use client'
 
-import { useAtom } from 'jotai'
+import { useSetAtom } from 'jotai'
 
 import { Input } from '@/components/ui/input'
 import { titleAtom } from '@/atoms/title'
 
 function TitleInputSection() {
-  const [title, setTitle] = useAtom(titleAtom)
+  const setTitle = useSetAtom(titleAtom)
 
   const handleEditTitle = (event: React.ChangeEvent<HTMLInputElement>) => {
     setTitle(event.target.value)
