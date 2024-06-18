@@ -19,7 +19,7 @@ function PreviewSection() {
   return (
     <section className="flex w-full flex-col gap-4">
       <h2 className="text-2xl font-bold">Preview</h2>
-      <div className="aspect-square">
+      <div className="aspect-square rounded-md border">
         <img
           src={`/api?title=${transTitle}&tech=${transIcons}&size=${size}&duration=${duration}`}
           alt={title}
