@@ -6,13 +6,13 @@ import { IconSelectSection } from '@/components/icon-select-section'
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center gap-16 font-sans lg:flex-row-reverse lg:items-start">
-      <div className="flex-0 flex w-full flex-col items-center gap-12 lg:w-1/2">
+    <main className="grid grid-cols-1 justify-center gap-16 font-sans lg:grid-cols-2">
+      <div className="flex w-full flex-col items-center gap-12 lg:order-last">
         <MarkdownSyntaxSection />
         <PreviewSection />
         <SliderSection />
       </div>
-      <div className="flex-0 flex w-full flex-col items-center gap-12 lg:w-1/2">
+      <div className="flex w-full flex-col items-center gap-12 lg:order-first">
         <TitleInputSection />
         <IconSelectSection />
       </div>

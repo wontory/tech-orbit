@@ -19,7 +19,7 @@ function MarkdownSyntaxSection() {
   return (
     <section className="flex w-full flex-col gap-4">
       <h2 className="text-2xl font-bold">Markdown Syntax</h2>
-      <pre className="overflow-x-scroll">
+      <pre className="w-full text-wrap break-all rounded bg-gray-800 p-4 font-mono text-white">
         <code>{`![${title}](https://tech-orbit.wontory.dev/api?title=${transTitle}&tech=${transIcons}&size=${size}&duration=${duration})`}</code>
       </pre>
     </section>
