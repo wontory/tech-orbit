@@ -5,11 +5,13 @@ import { useAtomValue } from 'jotai'
 import { titleAtom } from '@/atoms/title'
 import { selectedIconsAtom } from '@/atoms/selected-icons'
 import { sizeAtom } from '@/atoms/size'
+import { durationAtom } from '@/atoms/duration'
 
 function PreviewSection() {
   const title = useAtomValue(titleAtom)
   const selectedIcons = useAtomValue(selectedIconsAtom)
   const size = useAtomValue(sizeAtom)
+  const duration = useAtomValue(durationAtom)
 
   const transTitle = title.replaceAll(' ', '%20')
   const transIcons = selectedIcons.join(',').replaceAll(' ', '%20')
@@ -19,7 +21,7 @@ function PreviewSection() {
       <h2 className="text-2xl font-bold">Preview</h2>
       <div className="aspect-square">
         <img
-          src={`/api?title=${transTitle}&tech=${transIcons}&size=${size}`}
+          src={`/api?title=${transTitle}&tech=${transIcons}&size=${size}&duration=${duration}`}
           alt={title}
           className="h-full w-full"
         />
