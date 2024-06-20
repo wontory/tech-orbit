@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button'
 import { selectedIconsAtom } from '@/atoms/selected-icons'
 import type { IconType } from '@/types/icons'
 
-function IconLabelButton({ icon }: { icon: IconType }) {
+function AddIconButton({ icon }: { icon: IconType }) {
   const setSelectedIcons = useSetAtom(selectedIconsAtom)
 
   const handleClick = () => setSelectedIcons((prev) => [...prev, icon.title])
@@ -28,4 +28,4 @@ function IconLabelButton({ icon }: { icon: IconType }) {
   )
 }
 
-export { IconLabelButton }
+export { AddIconButton }
