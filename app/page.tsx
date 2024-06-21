@@ -12,6 +12,8 @@ export default function Home() {
     <main className="grid grid-cols-1 justify-center gap-16 font-sans lg:grid-cols-2 2xl:grid-cols-7">
       <ScrollArea className="max-h-[calc(100dvh-128px)] lg:order-last 2xl:col-span-2">
         <div className="flex w-full flex-col items-center gap-12">
+          <img src="/logo.svg" alt="TECH-ORBIT" className="w-full" />
+          <span className="sr-only">TECH-ORBIT</span>
           <MarkdownSyntaxSection />
           <PreviewSection />
           <SliderSection />
