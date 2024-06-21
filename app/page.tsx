@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 import { MarkdownSyntaxSection } from '@/components/markdown-syntax-section'
 import { PreviewSection } from '@/components/preview-section'
 import { SliderSection } from '@/components/slider-section'
@@ -8,7 +10,14 @@ export default function Home() {
   return (
     <main className="grid grid-cols-1 justify-center gap-16 font-sans lg:grid-cols-2 2xl:grid-cols-7">
       <div className="flex w-full flex-col items-center gap-12 lg:order-last 2xl:col-span-2">
-        <img src="/logo.svg" alt="TECH-ORBIT" className="w-full" />
+        <Image
+          src="/logo.svg"
+          alt="TECH-ORBIT"
+          width={684.9}
+          height={71.201}
+          draggable={false}
+          className="w-full"
+        />
         <span className="sr-only">TECH-ORBIT</span>
         <MarkdownSyntaxSection />
         <PreviewSection />
