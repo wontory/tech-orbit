@@ -15,6 +15,7 @@ function DurationSlider() {
       max={50}
       step={5}
       onValueChange={(value) => setDuration(value)}
+      className="py-1.5"
     />
   )
 }

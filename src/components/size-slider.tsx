@@ -15,6 +15,7 @@ function SizeSlider() {
       max={1500}
       step={50}
       onValueChange={(value) => setSize(value)}
+      className="py-1.5"
     />
   )
 }
