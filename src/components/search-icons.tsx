@@ -23,7 +23,7 @@ function SearchIcons() {
       <h2 className="text-xl font-bold">Search</h2>
       <Input placeholder="Search Icons" onChange={handleSearch} />
       <ScrollArea className="flex max-h-[calc(100dvh-512px)] min-h-96 flex-col">
-        <div className="grid grid-cols-2 gap-4 p-4 xl:grid-cols-3 2xl:grid-cols-4">
+        <div className="grid grid-cols-2 gap-4 px-4 xl:grid-cols-3 2xl:grid-cols-4">
           {filteredIcons.map((icon, index) => (
             <AddIconButton key={`icon-${index}`} icon={icon[1]} />
           ))}
