@@ -14,16 +14,16 @@ function AddIconButton({ icon }: { icon: IconType }) {
   return (
     <Button
       variant="outline"
-      className="flex aspect-square h-full w-full flex-col gap-4 text-wrap"
+      className="size-full justify-normal gap-8 text-wrap p-4 px-6"
       onClick={handleClick}
     >
       <div
         dangerouslySetInnerHTML={{
           __html: icon.svg.replace('<svg', `<svg fill="#${icon.hex}"`),
         }}
-        className="h-16 w-16"
+        className="size-8"
       />
-      <span className="text-xs">{icon.title}</span>
+      <span className="text-base">{icon.title}</span>
     </Button>
   )
 }
