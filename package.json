@@ -20,7 +20,7 @@
     "jotai": "^2.8.3",
     "lucide-react": "^0.456.0",
     "next": "14.2.17",
-    "react": "^18.3.1",
+    "react": "^19.0.0",
     "react-dom": "^18.3.1",
     "simple-icons": "^13.10.0",
     "tailwind-merge": "^2.3.0",
@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "@types/node": "^22.0.0",
-    "@types/react": "^18.3.3",
+    "@types/react": "^19.0.0",
     "@types/react-dom": "^18.3.0",
     "eslint": "^9.0.0",
     "eslint-config-next": "14.2.20",
