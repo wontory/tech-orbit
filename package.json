@@ -21,7 +21,7 @@
     "lucide-react": "^0.456.0",
     "next": "14.2.17",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "react-dom": "^19.0.0",
     "simple-icons": "^13.10.0",
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7"
@@ -29,7 +29,7 @@
   "devDependencies": {
     "@types/node": "^22.0.0",
     "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
+    "@types/react-dom": "^19.0.0",
     "eslint": "^9.0.0",
     "eslint-config-next": "14.2.20",
     "eslint-config-prettier": "^9.1.0",
