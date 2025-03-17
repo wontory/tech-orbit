@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { Analytics } from '@vercel/analytics/react'
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
 import '@/styles/globals.css'
@@ -20,6 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={cn('p-16', GeistSans.variable, GeistMono.variable)}>
         <Providers>{children}</Providers>
+        <Analytics />
       </body>
     </html>
   )
